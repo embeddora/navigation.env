@@ -369,7 +369,7 @@ int main( int argc, char **argv )
     osg::ref_ptr<osg::Node> loadedmodel = osgDB::readRefNodeFiles(arguments);
 
     // if not loaded assume no arguments passed in, try using default mode instead.
-    if (!loadedmodel) loadedmodel = osgDB::readRefNodeFile("glider.osgt");
+    if (!loadedmodel) loadedmodel = osgDB::readRefNodeFile("../navigation.env/glider.osgt");
 
     if (!loadedmodel)
     {
